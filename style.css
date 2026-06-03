@@ -1,1 +1,106 @@
-body{background:#000;color:#fff;font-family:Arial} header{text-align:center;color:#ff4da6;font-size:60px} nav a{color:white;border:2px solid #ff4da6;padding:8px;margin:4px;text-decoration:none} .wrap{border:2px solid #ff4da6;padding:20px;margin:20px}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color:white;
+
+    background-image:url("hellokittybg.jpg");
+    background-size:400px;
+    background-repeat:repeat;
+    background-attachment:fixed;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    text-align:center;
+    margin:30px 0;
+}
+
+.logo{
+    font-size:4rem;
+    color:#ff4da6;
+    text-shadow:
+        0 0 10px #ff4da6,
+        0 0 20px #ff4da6,
+        0 0 40px #ff4da6;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    border:2px solid #ff4da6;
+    padding:12px 24px;
+    border-radius:15px;
+    background:black;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#ff4da6;
+}
+
+.card{
+    background:rgba(0,0,0,.88);
+    border:3px solid #ff4da6;
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:30px;
+
+    box-shadow:
+        0 0 15px #ff4da6,
+        0 0 30px #ff4da6;
+}
+
+.card h2{
+    color:#ff4da6;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.home-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.home-grid img{
+    width:100%;
+    border-radius:20px;
+    border:3px solid #ff4da6;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    border:3px solid #ff4da6;
+}
+
+footer{
+    text-align:center;
+    margin:20px;
+    color:#ff4da6;
+}
